@@ -6,12 +6,13 @@ import {
   NavbarBrand,
   NavbarToggler,
   Collapse,
+  Button,
 } from "reactstrap";
 import "./NavBar.css";
 const NavBar = () => {
   return (
     <div>
-      <Navbar color="success" container dark expand="md" fixed="top" light>
+      <Navbar color="success" container dark expand="lg" fixed="top" light>
         <NavbarBrand href="/">الافعال</NavbarBrand>
         <NavbarBrand href="/">الاسماء</NavbarBrand>
         <NavbarToggler onClick={function noRefCheck() {}} />
@@ -33,17 +34,33 @@ const NavBar = () => {
               <NavLink href="#">المحذوفات</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">المحذوفات</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink>
                 <input
                   type="search"
                   id="site-search"
                   name="q"
-                  aria-label="Search through site conten"
+                  aria-label="Search through site content"
+                  placeholder="ابحث هنا"
+                  className="search-input"
                 />
                 <img className="search-icon" src="/loupe.png" alt="seatch" />
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <Button
+                  className="close-btn"
+                  close
+                  color="dark"
+                  outline
+                  size="sm"
+                  onClick={() => {
+                    const nav = document.getElementsByClassName("navbar")[0];
+                    const btn = document.getElementsByClassName("close-btn")[0];
+                    nav.classList.toggle("hide-nav");
+                    btn.classList.toggle("close-btn-hide");
+                  }}
+                />
               </NavLink>
             </NavItem>
           </Nav>

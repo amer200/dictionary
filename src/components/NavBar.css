@@ -4,3 +4,32 @@
     left: 35px;
     top: -1px;
 }
+
+.search-input {
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    padding-right: 20px;
+}
+
+.close-btn {
+    background-size: 60px;
+    margin-top: 5px;
+}
+
+.navbar {
+    transition: all .25s ease;
+}
+
+.close-btn-hide {
+    margin-top: 50px;
+    outline: none;
+    background-image: url('https://img.icons8.com/ios-filled/50/000000/menu--v1.png');
+    background-size: 25px;
+    width: 20px;
+}
+
+.hide-nav {
+    height: 0px;
+    padding: 0;
+}
