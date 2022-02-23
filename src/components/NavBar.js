@@ -15,7 +15,12 @@ const NavBar = () => {
       <Navbar color="success" container dark expand="lg" fixed="top" light>
         <NavbarBrand href="/">الافعال</NavbarBrand>
         <NavbarBrand href="/">الاسماء</NavbarBrand>
-        <NavbarToggler onClick={function noRefCheck() {}} />
+        <NavbarToggler
+          onClick={() => {
+            const navTogg = document.getElementsByClassName("collapse")[0];
+            navTogg.classList.toggle("d-block");
+          }}
+        />
         <Collapse navbar>
           <Nav className="me-auto" navbar>
             <NavItem>

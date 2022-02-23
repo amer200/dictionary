@@ -33,3 +33,28 @@
     height: 0px;
     padding: 0;
 }
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .close-btn {
+        display: none;
+    }
+
+    .navbar>.container {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 360px) {
+    .search-icon {
+        left: -235px;
+        top: -30px;
+    }
+}
