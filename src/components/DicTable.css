@@ -1,0 +1,33 @@
+.table-responsive {
+    margin-top: 95px;
+}
+
+.d-block {
+    display: block;
+}
+
+.s-lang {
+    padding-left: 5px;
+    padding-right: 5px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.td-1 {
+    position: relative;
+    right: 10px;
+    background: #65C18C;
+    padding: 10px;
+    color: #fff;
+    max-width: 275px;
+    max-height: 100px;
+    overflow: scroll;
+    display: none;
+}
+
+.td-1 span {
+    color: #FFE61B;
+    font-size: 1.11rem;
+    margin-left: 10px;
+}
