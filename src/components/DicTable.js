@@ -1,9 +1,7 @@
 import { Table } from "reactstrap";
 import "./DicTable.css";
 const DicTable = () => {
-    const tdHandler  = () =>{
-
-    }
+  const tdHandler = () => {};
   return (
     <Table hover responsive striped>
       <thead>
@@ -40,7 +38,7 @@ const DicTable = () => {
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td onClick={}>
+          <td>
             كلمة 1
             {
               <div className="td-1">
