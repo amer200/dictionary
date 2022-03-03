@@ -1,7 +1,7 @@
 import { Table } from "reactstrap";
 import "./DicTable.css";
 const DicTable = () => {
-  const tdHandler = () => {};
+  // const tdHandler = () => {};
   return (
     <Table hover responsive striped>
       <thead>
